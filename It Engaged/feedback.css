@@ -1,0 +1,128 @@
+/* Style for the body */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Adding hover effect for the container */
+.container:hover {
+    box-shadow: 0px 0px 20px lightgray;
+}
+
+/* Styling for the heading */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* General label styling */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Highlighting questions with light red background */
+.question > label {
+    background-color: #ffe5e5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Focus effect for inputs */
+input:focus {
+    outline: none;
+    border-color: #c20000;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Question and option sections */
+.options {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Remove bold from radio button labels */
+.options label {
+    font-weight: normal;
+}
+
+/* Note styling */
+.note {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #c20000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+    background-color: #a30000;
+}
+
+/* Adding responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+s

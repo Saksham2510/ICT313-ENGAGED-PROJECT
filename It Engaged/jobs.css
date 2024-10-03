@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #262223;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #fff; /* Match the background color */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff5c5e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #ff5c5e; /* Change text color to white */
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #262223; /* Set navigation text color to white */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff5c5e;
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login{
+    background-color: #ff5c5e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #903;
+}
+
+
+/* Main Content */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 100px 20px 20px; /* Adjust padding to account for fixed header */
+}
+
+#job-listings {
+    flex: 1;
+}
+
+#job-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #ff5c5e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

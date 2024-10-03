@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 200px;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.profile-content {
+    padding: 20px;
+    flex: 1;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.profile-form label {
+    margin: 10px 0 5px;
+}
+
+.profile-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile-form button {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.profile-form button:hover {
+    background-color: #e05337;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
